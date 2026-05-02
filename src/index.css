@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Sidebar remove hone ke baad board full width lega */
+.trello-wrapper {
+  display: flex;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+.board-container {
+  width: 100%;
+}
+
+.card {
+  background: #34495e;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Text ek taraf, buttons doosri taraf */
+  align-items: center;
+  gap: 10px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.card-actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.card-actions button:hover {
+  opacity: 1;
+}
+
+.lists-container {
+  display: flex;
+  flex-direction: row; /* Columns horizontal honge */
+  align-items: flex-start;
+  gap: 20px;
+  overflow-x: auto; /* Agar columns zyada hon to scroll ho sake */
+  padding-bottom: 20px;
+}
+
+/* Har column (Today, This Week) ki width fix karein */
+.list-column {
+  background: rgba(0, 0, 0, 0.4);
+  width: 300px; /* Ye width zaroori hai taake column vertical lage */
+  min-width: 300px;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Column ke andar ka saaman vertical rahega */
+}
+
+/* Cards area vertical flow ke liye */
+.cards-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Card ki styling */
+.card {
+  /* cursor: pointer; */
+  background: #00000021;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  word-break: break-all; /* Lambe text ko wrap karne ke liye */
+}
+.add-list-column{
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
